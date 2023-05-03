@@ -1,0 +1,19 @@
+/*.container h2{font-size: 40px; color: green; text-decoration: underline;}
+.container p{font-size: 25px; color: blue;}
+
+.sub dt{font-size: 25px; color: green; text-decoration: underline;}
+.sub dd{font-size: 25px; color: green}*/
+
+.container{
+    font-size: 25px;
+    color: green;
+}
+.container>h2{
+    font-size: 40px;
+}
+.container>p{
+    color: blue;
+}
+.under{
+    text-decoration: underline;
+}

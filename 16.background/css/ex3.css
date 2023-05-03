@@ -1,0 +1,57 @@
+/*common*/
+html{
+    font-size:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+/*layout*/
+.banner{
+    height:250px;
+    margin-bottom:50px;
+    overflow: hidden;
+}
+.container{
+    width:1200px;
+    margin:0 auto;  
+}
+.container h2{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:100px;
+    background:url(../ex3/예제3/sub_tit_line.gif) repeat-x 0 50%;
+    text-align: left;
+}
+.container>h2>span{
+    background:white;
+    padding-right:18px;
+}
+.container>h3{
+    font-size:52px;
+    font-family:"풀무원체";
+    text-align: center;
+    padding:0 70px;
+    margin-bottom:50px;
+}
+.container>h3>span{
+    color: #7EAE72;
+}
+@font-face {
+    font-family:"풀무원체";
+    src: url(../ex3/예제3/PulmuoneLOHASBold.woff);
+}
+.container section{
+    width:810px;
+    padding:40px 90px 50px;
+    margin:0 auto;
+    box-sizing: border-box;
+    background:#F4F4F4;
+}
+.container>section>h4{
+    font-family:"풀무원체";
+    font-size:35px;
+    margin-bottom:25px;
+}
+.container>section>h4+p{
+    margin-bottom:30px;
+}
+
