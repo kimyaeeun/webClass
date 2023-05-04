@@ -1,0 +1,74 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+
+/* layout */
+.station{
+    width: 100%;
+    height: 500px;
+    border: 1px solid red;
+    margin: 0 auto;
+    position: relative;
+}
+.train{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.train>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    border: 1px solid green;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.train>li .box{
+    border: 1px solid lime;
+    width: 1200px;
+    position: absolute;
+    left:50%; bottom: 50px;
+    transform: translateX(-50%);
+    padding-right: 600px;
+    box-sizing: border-box;
+}
+.box h4{
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+.train>li.show{
+    opacity: 1;
+}
+.train>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.controler{
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.pagenation{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+}
+.pagenation>li{
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    font-size: 0;
+    margin-right: 10px;
+    background: black;
+    opacity: 0.4;
+}
+.pagenation>li:last-of-type{margin-right: 0;}
+.pagenation>li.on{opacity: 1;}

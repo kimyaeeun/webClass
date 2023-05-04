@@ -186,15 +186,24 @@ main{position: relative;}
     height: 50%;
     perspective:10000px;perspective-origin:0% 100%;
 }
+.culture>li{
+    flex: 1;
+    position: relative;
+}
 
 .culture>ul>li{
     overflow: hidden;
 }
 .culture>ul>li img{
+    width: 100%;
+    height: 100%;
     transition:all 0.5s ease 0s;
+    filter: grayscale(1) brightness(0.7);
 }
 .culture>ul>li:hover img{
-    transform:scale(1.2);
+    transform:scale(1.1);
+    filter: grayscale(0) brightness(1);
+
 }
 
 .culture>ul{display: flex;}
@@ -205,23 +214,39 @@ main{position: relative;}
     position: absolute;
     left: 50%;
     transform: translate(-50%,50%);
+    bottom: 200px;
+    color: #fff;
+    z-index: 1111;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+.culture>li:hover h4{
+    transform: translateY(-30px);
+}
+.culture>ul>li p{
+    font-size: 12px;
+    position: relative;
     bottom: 100px;
     color: #fff;
     z-index: 1111;
     text-align: center;
-}
-
-.culture>ul>li p{
-    font-size: 14px;
-    position: absolute;
-    bottom: 50px;
-    color: #fff;
-    z-index: 1111;
-    text-align: center;
     left: 50%;
-    transform: translate(-50%,50%);
-    display: none;
+    transform: translate(-50%,-20%);
+    padding-top: 20px;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
 }
+.culture>ul>li p::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 20px;
+    height: 1px;
+    background: #fff;
+}
+.culture>ul>li:hover p{opacity: 1;}
 .culture>ul>li.on >a>p{display: block;}
 
 .notice{padding-top: 100px;}
@@ -233,13 +258,14 @@ main{position: relative;}
     margin-right: 20px;
     margin-bottom: 200px;
     overflow: hidden;
-
 }
 .notice>ul>li img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: all 0.5s ease 0s;
 }
-.notice>ul>li:hover img{transform:scale(1.2);}
+.notice>ul>li:hover img{transform:scale(1.1);}
 .notice>ul>li:last-of-type{margin-right: 0;}
 .notice>ul>li p{padding:10px 0;}
 .notice>ul>li h4{
