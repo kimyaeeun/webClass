@@ -195,6 +195,7 @@ main{position: relative;}
 .culture{
     position: relative;
     transition: all 0.5s ease 0s;
+    margin-bottom: 160px;
 }
 .culture>ul{
     height: 574px;
@@ -257,79 +258,84 @@ main{position: relative;}
     height: 1px;
     background: #fff;
 }
-
 .culture>ul>li:hover p{opacity: 1;}
 .culture>ul>li.on >a>p{display: block;}
 
-.notice{padding-top: 100px;}
-.notice>ul{ display: flex; position: relative;}
+
+/* notice */
+.notice>ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
 .notice>ul>li{
-    width: calc((100% - 60px)/3);
+    width: calc((100% - 60px)/4);
     height: 100%;
     padding-bottom: 10px;
     margin-right: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 200px;  
+}
+.notice>ul>li:last-of-type{margin-right: 0;}
+.notice li figure{
+    height: 190px;
     overflow: hidden;
 }
-.notice>ul>li img{
+.notice>ul>li figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.5s ease 0s;
 }
-.notice>ul>li:hover img{transform:scale(1.1);}
-.notice>ul>li:last-of-type{margin-right: 0;}
-.notice>ul>li p{padding:10px 0;}
-.notice>ul>li h4{
-    font-weight: bold;
-    font-size: 1.3rem;
+.notice>ul>li p{
+    margin:20px 0;
+    font-size: 12px;
 }
+.notice>ul>li h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+.notice>ul>li:hover img{transform:scale(1.1);}
+
 
 /* footer */
-
-.coInfo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-}
+footer{margin-top: 200px;}
 footer .footMenu1{
-    padding: 60px 0 70px 0;
-    border-top: 1px solid #e0e0e0;
-}
-.innerFooter{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding-top: 70px;
+    border-top: 1px solid #ebebeb;
+    margin-bottom: 50px;
 }
 .footMenu1>ul{
-    width: 1440px;
+    width: 1120px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 .footMenu1>ul>li{
-    width: calc((100% -100px)/6);
+    width: calc(100%/6);
 }
 .footMenu1>ul>li>a{
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     display: block;
-    margin-bottom: 10px;
 }
-
+.footMenu1>ul>li>ul{
+    margin-top: 18px;
+    color: #9a9a9a;
+    font-size: 0.9rem;
+}
 .footMenu1>ul>li>ul>li{
+    margin-bottom: 14px;  
     padding: 5px 0;
-    color: #ababab;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; 
 }
-.footMenu1>ul>li>ul>li:hover{
-    color: #000;
-    font-weight: bold;
+.footMenu1>ul>li>ul>li:hover{color: #000;}
+.footMenu1>ul>li>ul>li:last-of-type{margin-bottom: 0;}
+.footMenu2{
+    padding-bottom: 75px;
+    border-bottom: 1px solid #ebebeb;
 }
-
 .footMenu2>ul{
-    width: 1440px;
+    width: 1120px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -337,18 +343,25 @@ footer .footMenu1{
 .footMenu2>ul>li{
     display: flex;
     justify-content: flex-start;
-    width: calc((100% -100px)/6);
-    font-size: 1.1rem;
+    width: calc(100%/6);
+    font-size: 1.12rem;
     font-weight: bold;
-    box-sizing: border-box;
 }
-.footMenu2>ul>li.blue{color: blue;}
-footer .footMenu2{
-    padding: 60px 0 70px 0;
-    border-bottom: 1px solid #e0e0e0;
+.footMenu2>ul>li.blue{color: #3774DA;}
+
+.coInfo{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 25px 0;
 }
-.coInfo .footLogo img{
-    width: 140px;
+.coInfo::before{
+    content: '';
+    width: 138px;
+
+}
+.footLogo img{
+    width: 120px;
     margin-right: 30px;
 }
 .footLogo{
@@ -356,22 +369,30 @@ footer .footMenu2{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     padding: 30px 0;
+}
+.copy{
+    margin-left: 36px;
+    color: #9a9a9a;
 }
 .footLogo>p{color: #777;}
 .snsMenu{
     position: absolute;
     right: 300px;
     top: 40%;
+    align-self: flex-end;
 }
 .snsMenu>ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
+.snsMenu>ul>li{
+    width: 38px;
+}
 .snsMenu>ul>li img{
-    width: 40px;
+    width: 100%;
     height: 40px;
     transition: all 0.5s ease 0s;
 }
