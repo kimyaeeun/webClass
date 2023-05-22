@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/study5.js"></script>
+    <link rel="stylesheet" href="./css/study5.css">
     <title>이벤트</title>
     
 </head>
@@ -16,7 +17,13 @@
     <div class="txtbox">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corporis aut, deserunt autem est adipisci praesentium maiores doloremque hic ullam tempore facere beatae, itaque labore. Quisquam architecto harum blanditiis officia.
     </div>
-    <button onclick="document.querySelector('txtbox').style.color = 'blue'">클릭하면 글씨 파랗게 됨</button>
+    <button onclick="document.querySelector('.txtbox').style.color = 'blue'">클릭하면 글씨 파랗게 됨</button>
     <button class="btnClick">클릭하면 글씨 다시 검은색</button>
+    <div class="hiddenPopup">
+        <span class="btnPopupClose">메뉴닫기</span>
+        <h1>title</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, veniam. Tempore quae ab itaque repellat iure quibusdam, nam nesciunt incidunt sed vero soluta alias commodi quidem saepe, temporibus, error laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem hic facilis asperiores quas odio, soluta architecto quo, dolores fuga alias quaerat voluptatibus et quos repellendus dicta vitae fugiat deleniti.</p>
+    </div>
+    <span class="btnPopup">메뉴버튼</span>
 </body>
 </html>
