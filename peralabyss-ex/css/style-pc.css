@@ -103,7 +103,10 @@ header:hover .logoArea a{
 
 /* main */
 main{position: relative;}
-.videoBanner{height: 780px;}
+.videoBanner{
+    height: 780px;
+    position: relative;
+}
 .videoBanner::after{
     content: "";
     position: absolute;
@@ -121,7 +124,7 @@ main{position: relative;}
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% , -250%);
+    transform: translate(-50% , -50%);
     z-index: 100;
     text-align: center;
 }
@@ -145,25 +148,29 @@ main{position: relative;}
     font-weight: bold;
     margin-bottom: 26px;
 }
-.news>ul{
+.news ul{
     display: flex;
     justify-content: space-between;
 }
-.news>ul>li{
-    padding-right: 50px;
+.news ul>li{
     border-right: 1px solid #ebebeb;
-    flex:1;
+    /* flex:1; */
     padding: 0 30px;
+    box-sizing: border-box;
 }
-.news>ul>li:first-of-type{padding: none;}
-.news>ul>li:last-of-type{
+.news ul>li:first-of-type{padding: none;}
+.news ul>li:last-of-type{
     padding: none;
     border-right:none;
 }
-.news>ul>li h4{
+.news ul>li h4{
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 16px;
+}
+.news .swiper-pagination{
+    position: relative;
+    border: 1px solid red;
 }
 .date{
     font-size: 10px;
@@ -380,6 +387,7 @@ footer .footMenu1{
 .snsMenu>ul>li img:last-of-type{margin-right: 10px;}
 
 .mo{display: none;}
+.moMenu{display: none;}
 }
 
 
