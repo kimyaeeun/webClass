@@ -10,11 +10,24 @@ window.onload = function(){
             },
             768:{
                 slidesPerView:3,
-                spaceBetween:20
             },
         }
-    });
+    })
     
+
+    let noticeSlider = new Swiper(".notice_station",{
+        pagination: {
+            el: '.swiper-pagination',
+          },
+          breakpoints:{
+            280:{
+                slidesPerView:1,
+            },
+            768:{
+                slidesPerView:4,
+            },
+        }
+    })
 
 
 
