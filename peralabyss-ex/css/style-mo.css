@@ -301,6 +301,13 @@ main{position: relative;}
     position: relative;
     margin-top: 30px;
 }
+.notice .notice-pagination{
+    position: relative;
+}
+
+span.swiper-pagination-bullet-active {
+    background: #000;
+}
 
 
 /* footer */
