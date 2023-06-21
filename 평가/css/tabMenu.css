@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0;}
+
+dl{
+    width: 500px;
+    position: relative;
+    display: flex;
+}
+dt{
+    width: 100px;
+    height: 50px;
+    /* padding: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+dt.show{border-bottom: 3px solid black;}
+dd{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    display: none;
+}
+dd.on{display: block;}
