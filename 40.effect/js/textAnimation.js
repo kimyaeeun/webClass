@@ -3,6 +3,8 @@ function textAni(cssSelector,option){
     // aniDelay 글자들이 나타나는 간격
     // aniSpeed 글자들이 나타나는 속도
     // textSize 글자들에게 적용하는 크기
+    // aniNAme 적용할 애니메이션 이름
+    
     let lettersLength = $(cssSelector).get(0).innerText.length
     let result =""
     for(let i=0 ; i<lettersLength ; i++){
