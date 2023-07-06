@@ -1,0 +1,90 @@
+*{margin: 0; padding: 0;}
+
+.intro{
+    height: 100vh;
+    background: gold;
+}
+.fixedFrame{
+    height: 8000px;
+    background: lightblue;
+    position: relative;
+}
+.contents{
+    height: 200vh;
+    background: lightsalmon;
+}
+.movingArea{
+    height: 100vh;
+    background: lightsteelblue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.movingArea>figure{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#progress{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#progress path{
+    fill: transparent;
+    stroke: #000;
+    /* stroke-dasharray: 20;
+    stroke-dashoffset: 0;
+    animation: dash 20s linear 0s infinite;
+    transition: all 0.5s ease 0s; */
+}
+/* #progress path:hover{
+    stroke: #754534;
+    stroke-width: 3;
+    stroke-dasharray: 10;
+}
+@keyframes dash{
+    0%{stroke-dashoffset: 0;}
+    100%{stroke-dashoffset: 1000;}
+} */
+.per{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 10rem;
+    opacity: 0.3;
+    font-weight: bold;
+}
+.station{
+    /* background: #000; */
+    width: 100%;
+    height: 100%;
+}
+.train{
+    list-style: none;
+    width: 800%;
+    height: 100%;
+    display: flex;
+}
+.train>li{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10rem;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+.train>li.on{
+    color: lime;
+}
+.train>li b{
+    border: 1px solid lime;
+    display: inline-block;
+    transform: rotateY(180deg);
+}
